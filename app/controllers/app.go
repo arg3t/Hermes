@@ -58,6 +58,7 @@ func (h Hermes) Read(title, recipient, user, provided_hash string) revel.Result 
 		return Pixel("No dice")
 	}
 	identity := title + recipient + user + key
+	fmt.Printf(identity)
 	hash_string := fmt.Sprintf("%x", sha256.Sum256([]byte(identity)))
 	if hash_string != provided_hash {
 		fmt.Printf("Hashes don't match!\n")
