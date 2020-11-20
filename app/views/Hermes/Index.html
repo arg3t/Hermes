@@ -1,21 +1,29 @@
-{{set . "title" "Home"}}
-{{template "header.html" .}}
-
-<header class="jumbotron" style="background-color:#A9F16C">
-  <div class="container">
-    <div class="row">
-      <h1>It works!</h1>
-      <p></p>
-    </div>
-  </div>
-</header>
-
-<div class="container">
-  <div class="row">
-    <div class="span6">
-      {{template "flash.html" .}}
-    </div>
-  </div>
-</div>
-
-{{template "footer.html" .}}
+<head>
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+body {
+    background-color: rgb(24, 26, 27);    
+}
+h1{
+    text-align: center;
+    font-size: 5em;
+    color: white; 
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    text-align:center;
+    font-size: 2em;
+    padding: 1em 2em;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+    </style>
+</head>
+<body>
+    <h1 id="hermes">Hermes</h1>
+    <p align="center">
+        <img width="256" height="256" src="/public/hermes.png">
+    </p>
+    <p>Hermes is an open source E-Mail tracking solution that is written in Go. It tracks emails using a tracking pixel and when it detects that the e-mail was read, it sends a notification using <a href="https://github.com/gotify/server"> Gotify </a>. This is not meant to be high-quality or easily readible. I made it three hours after learning go to practice, so don’t judge me! For more info on how this works, just read the code, it is not that long anyways. You can find it <a href="https://github.com/yigitcolakoglu/Hermes">here</a>.</p>
+</body>

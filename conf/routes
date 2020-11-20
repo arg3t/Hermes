@@ -14,6 +14,9 @@ GET     /favicon.ico                            404
 
 GET     /read/:user/:title/:recipient/:provided_hash/     Hermes.Read           
 
+GET    /public/*filepath      Static.Serve("public")
+
+
 # Catch all, this will route any request into the controller path
 #
 #                    **** WARNING ****
